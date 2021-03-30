@@ -91,8 +91,20 @@ public class Main {
 
          Program_fourteen.productSum(list);*/
 
-        int [] array = {0,1,21,33,45,45,61,71,72,73};
-        System.out.println(Program_fifteen.binarySearch(array,33)+"");
+    /*    int [] array = {0,1,21,33,45,45,61,71,72,73};
+        System.out.println(Program_fifteen.binarySearch(array,33)+"");*/
+
+
+           /*   int [] array = {141,1,17,-7,-17,-27,18,541,8,7,7};
+        int [] result = Program_sixteen.findThreeLargestNumbers(array);
+        System.out.println(Arrays.deepToString(new int[][]{result}));*/
+
+      /*  int [] array = {141,1,17,-7,-17,-27,18,541,8,7,7};
+        int [] result = Program_seventeen.bubbleSort(array);
+        System.out.println(Arrays.deepToString(new int[][]{result}));*/
+
+        String s = "abhdcba";
+        System.out.println(Program_twenty.isPalindrome(s));
 
 
 
