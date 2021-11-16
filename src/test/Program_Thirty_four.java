@@ -1,15 +1,32 @@
 package test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Program_Thirty_four {
     public int[][] mergeOverlappingIntervals(int[][] intervals) {
-        int[][] mergedArray = new int[][]{};
-        for(int i = 1;i< intervals.length-1;i++){
+        List<int[]> mergedArray = new ArrayList<>();
+        Arrays.sort(intervals,(a,b) -> {
+            return Integer.compare(a[0], b[0]);
+        });
+        int[] currentInterval = intervals[0];
+        mergedArray.add(currentInterval);
 
-            if(intervals[i-1][1] <= intervals[i][0]){
+        for(int[] nextInterval : intervals){
+            int nextStart = nextInterval[0];
+            int nextEnd = nextInterval[1];
+            int currentEnd = currentInterval[1];
 
+            if(currentEnd >= nextStart){
+                currentInterval[1] = Math.max(currentEnd,nextEnd);
+            }else{
+                currentInterval = nextInterval;
+                mergedArray.add(currentInterval);
             }
 
         }
-        return new int[][] {};
+
+        return mergedArray.toArray(new int[mergedArray.size()][]);
     }
 }
