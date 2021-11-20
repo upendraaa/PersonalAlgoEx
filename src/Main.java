@@ -1,9 +1,5 @@
-import test.*;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import test.Program_Forty_Nine;
+import test.Program_twelve;
 
 public class Main {
 
@@ -115,8 +111,8 @@ public class Main {
         String str2 ="AlgoExpert is the Best!";
         System.out.println(Program_twenty_three.generateDocument(str1,str2));*/
 
-      //  int [] array = {12,3,1,2,-6,5,-8,6};
-      //  Program_twenty_five.threeNumberSum(array,0);
+        //  int [] array = {12,3,1,2,-6,5,-8,6};
+        //  Program_twenty_five.threeNumberSum(array,0);
 
 //        int [] arrayOne = {-1,5,10,20,28,3};
 //        int [] arrayTwo = {26,134,135,15,17};
@@ -124,20 +120,20 @@ public class Main {
 //         int[] returnArray = Program_twenty_seven.smallestDifference(arrayOne,arrayTwo);
 //        System.out.println(Arrays.deepToString(new int[][]{returnArray}));
 
-        List<Integer> list = new ArrayList<>();
-        list.add(2);
-        list.add(1);
-        list.add(2);
-        list.add(2);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(2);
+//        List<Integer> list = new ArrayList<>();
+//        list.add(2);
+//        list.add(1);
+//        list.add(2);
+//        list.add(2);
+//        list.add(2);
+//        list.add(3);
+//        list.add(4);
+//        list.add(2);
+//
+//        list = Program_twenty_eight.moveElementToEnd(list,2);
+//        System.out.println(list.toString());
 
-        list = Program_twenty_eight.moveElementToEnd(list,2);
-        System.out.println(list.toString());
-
-
+        Program_Forty_Nine.numberOfWaysToTraverseGraph(4, 3);
 
 
     }
